@@ -5,11 +5,13 @@
  */
 package br.com.arq_atv_2.model;
 
+import java.io.Serializable;
+
 /**
  *
  * @author gardh
  */
-class Pais {
+public class Pais implements Serializable{
     
     private int idPais;
     private String nome;
