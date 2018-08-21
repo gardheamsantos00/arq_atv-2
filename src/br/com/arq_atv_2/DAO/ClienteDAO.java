@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DAO;
+package br.com.arq_atv_2.DAO;
 
-import br.com.arq_atv.bdmemoria.BD;
+import br.com.arq_atv_2.bdmemoria.BD;
 import br.com.arq_atv_2.model.Cliente;
 import java.util.List;
 

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.com.arq_atv.bdmemoria;
+package br.com.arq_atv_2.bdmemoria;
 
 import br.com.arq_atv_2.model.Cliente;
 import br.com.arq_atv_2.model.Pais;
