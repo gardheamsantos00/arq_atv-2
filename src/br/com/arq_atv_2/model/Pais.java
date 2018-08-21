@@ -11,23 +11,13 @@ import java.io.Serializable;
  *
  * @author gardh
  */
-public class Pais implements Serializable{
-    
-    private int idPais;
+public class Pais implements Serializable {
+
+    private Integer idPais;
     private String nome;
     private String sigla;
 
     public Pais() {
-    }
-    
-    
-
-    public int getId() {
-        return idPais;
-    }
-
-    public void setId(int id) {
-        this.idPais = id;
     }
 
     public String getNome() {
@@ -49,7 +39,7 @@ public class Pais implements Serializable{
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 67 * hash + this.idPais;
+        hash = 67 * hash + this.getIdPais();
         return hash;
     }
 
@@ -65,10 +55,20 @@ public class Pais implements Serializable{
             return false;
         }
         final Pais other = (Pais) obj;
-        if (this.idPais != other.idPais) {
+        if (this.getIdPais() != other.getIdPais()) {
             return false;
         }
         return true;
     }
+
+    public Integer getIdPais() {
+        return idPais;
+    }
+
+    public void setIdPais(Integer idPais) {
+        this.idPais = idPais;
+    }
+
     
+
 }

@@ -15,6 +15,6 @@ import java.util.List;
  * @author gardh
  */
 public class BD {
-    public static List<Cliente> litPessoa= new ArrayList<>();
+    public static List<Cliente> listCliente= new ArrayList<>();
     public static List<Pais> listPais = new ArrayList<>();
 }

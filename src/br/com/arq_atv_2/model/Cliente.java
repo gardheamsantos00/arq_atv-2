@@ -13,7 +13,7 @@ import java.io.Serializable;
  */
 public class Cliente implements Serializable {
 
-    private int idCli;
+    private Integer idCli;
     private String nome;
     private String telefone;
     private Double limiteCredito;
@@ -22,14 +22,7 @@ public class Cliente implements Serializable {
     public Cliente() {
     }
 
-    public int getId() {
-        return idCli;
-    }
-
-    public void setId(int id) {
-        this.idCli = id;
-    }
-
+ 
     public String getNome() {
         return nome;
     }
@@ -58,7 +51,7 @@ public class Cliente implements Serializable {
     @Override
     public int hashCode() {
         int hash = 5;
-        hash = 37 * hash + this.idCli;
+        hash = 37 * hash + this.getIdCli();
         return hash;
     }
 
@@ -74,7 +67,7 @@ public class Cliente implements Serializable {
             return false;
         }
         final Cliente other = (Cliente) obj;
-        if (this.idCli != other.idCli) {
+        if (this.getIdCli() != other.getIdCli()) {
             return false;
         }
         return true;
@@ -86,6 +79,14 @@ public class Cliente implements Serializable {
 
     public void setTelefone(String telefone) {
         this.telefone = telefone;
+    }
+
+    public Integer getIdCli() {
+        return idCli;
+    }
+
+    public void setIdCli(Integer idCli) {
+        this.idCli = idCli;
     }
 
 }
