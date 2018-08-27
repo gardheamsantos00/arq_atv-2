@@ -15,6 +15,8 @@ import java.util.List;
  */
 public class ClienteDAO {
 
+    // adicione mais validacoes se quiser fazer a 
+    //validacao direto no DAO
     public boolean addDao(Cliente obj){
         if(obj.getIdCli() == null){
             int id = BD.listCliente.size()+1;

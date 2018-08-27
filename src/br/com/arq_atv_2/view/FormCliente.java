@@ -187,6 +187,8 @@ public class FormCliente extends javax.swing.JDialog {
 
     private void txtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeActionPerformed
         // TODO add your handling code here:
+        
+        //tem que tratar o nome pra saber se ta vazio e se já exite no mínimo
     }//GEN-LAST:event_txtNomeActionPerformed
 
     private void txtCod1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCod1ActionPerformed
